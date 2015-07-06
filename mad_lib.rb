@@ -24,7 +24,7 @@ puts "Enter an animal in the plural form"
 plural_animal = gets.chomp
 
 puts "Enter a type of family member"
-family_member = gets.capitalize.chomp
+family_member = gets.chomp.capitalize
 
 puts "Enter a vegetable"
 vegetable = gets.chomp
