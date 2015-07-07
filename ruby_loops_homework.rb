@@ -32,7 +32,7 @@
 
 # 5. I'm not sure what the issue was here?
 #atl_neighborhoods = ["Virginia Highlands", "Grant Park", "Buckhead"]
-#atl_neighborhoods.each do |count|
+#atl_neighborhoods.each do |name_of_neighborhood|
 	#puts count
 #end
 
@@ -47,14 +47,14 @@
 
 # 7.
 #0...It printed 7. Not sure why? 
-x = "apple"
+# x = "apple"
 
-6.times do
-	x= "banana"
-	puts x
-end
+# 6.times do
+# 	x= "banana"
+# 	puts x
+# end
 
-puts x
+# puts x
 
 # 8.
 #0...Printed banana 6 times and apple once. Not sure why. Need more explanation
