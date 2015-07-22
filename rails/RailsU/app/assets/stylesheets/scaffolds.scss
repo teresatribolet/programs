@@ -29,4 +29,158 @@ textarea {
   margin-bottom: 10px;
 }
 
+.digg_pagination {
+  background: white;
+  cursor: default;
+  /* self-clearing method: */ }
+  .digg_pagination a, .digg_pagination span, .digg_pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+  .digg_pagination .disabled {
+    color: #999999;
+    border: 1px solid #dddddd; }
+  .digg_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background: #2e6ab1;
+    color: white;
+    border: 1px solid #2e6ab1; }
+  .digg_pagination a {
+    text-decoration: none;
+    color: #105cb6;
+    border: 1px solid #9aafe5; }
+    .digg_pagination a:hover, .digg_pagination a:focus {
+      color: #000033;
+      border-color: #000033; }
+  .digg_pagination .page_info {
+    background: #2e6ab1;
+    color: white;
+    padding: 0.4em 0.6em;
+    width: 22em;
+    margin-bottom: 0.3em;
+    text-align: center; }
+    .digg_pagination .page_info b {
+      color: #000033;
+      background: #6aa6ed;
+      padding: 0.1em 0.25em; }
+  .digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .digg_pagination {
+    height: 1%; }
+  *:first-child + html .digg_pagination {
+    overflow: hidden; }
 
+h1 {
+  font-family: "Graduate", serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Graduate", serif;
+  text-align: center;
+  margin-bottom: 20px;
+  }
+
+  h3 {
+  font-family: "Graduate", serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home {
+  background-color: #981a21;
+  color: #fff;
+  }
+
+a.navbar-brand {
+  font-family: "Graduate", serif;
+  font-size: 20px;
+}
+
+ul.nav.navbar-nav {
+  font-family: "Graduate", serif;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+  padding-right: 100px;
+}
+
+.icon {
+  font-size: 40px;
+  font-family: "Just Another Hand", cursive;
+  padding-top: 15px;
+}
+
+span.glyphicon.glyphicon-star,
+span.glyphicon.glyphicon-heart, 
+span.glyphicon.glyphicon-user {
+  font-size: 75px;
+  margin-left: 75px;
+}
+
+p.home {
+  margin: 20px 200px;
+}
+
+button.btn.btn-default {
+  margin-left: 500px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+button.btn.btn-default:hover {
+  background-color: #CFCFCF;
+  border: 1px solid #444;
+}
+
+a.rlink {
+  color: #981a21;
+  text-decoration: none;
+}
+
+.swing {
+  -vendor-animation-duration: 10s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+div.carousel-inner {
+  margin-bottom: 10px;
+}
+
+.row {
+  margin-left:205px;
+}
+
+#gradient {
+width: 185.5px;
+height: 144.656px;
+top: -132.656px;
+left: 1px;
+position: relative;
+background: rgba(202,7,53,1);
+background: -moz-linear-gradient(-45deg, rgba(202,7,53,1) 0%, rgba(167,6,44,0.7) 44%, rgba(130,3,32,0.32) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(202,7,53,1)), color-stop(44%, rgba(167,6,44,0.7)), color-stop(100%, rgba(130,3,32,0.32)));
+background: -webkit-linear-gradient(-45deg, rgba(202,7,53,1) 0%, rgba(167,6,44,0.7) 44%, rgba(130,3,32,0.32) 100%);
+background: -o-linear-gradient(-45deg, rgba(202,7,53,1) 0%, rgba(167,6,44,0.7) 44%, rgba(130,3,32,0.32) 100%);
+background: -ms-linear-gradient(-45deg, rgba(202,7,53,1) 0%, rgba(167,6,44,0.7) 44%, rgba(130,3,32,0.32) 100%);
+background: linear-gradient(135deg, rgba(202,7,53,1) 0%, rgba(167,6,44,0.7) 44%, rgba(130,3,32,0.32) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca0735', endColorstr='#820320', GradientType=1 );
+}
+
+#img {
+width: 197.5px;
+height: 144.656px;
+}
+ 
+ 

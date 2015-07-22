@@ -5,8 +5,7 @@ class EnrollmentsController < ApplicationController
   # GET /enrollments.json
   def index
     @enrollments = Enrollment.all
-    @courses = Course.where(course_id: @course.id)
-    @students = Student.where(student_id @student.id)
+
   end
 
   # GET /enrollments/1

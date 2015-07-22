@@ -1,6 +1,7 @@
 <h1>Editing Instructor</h1>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @instructor %> |
-<%= link_to 'Back', instructors_path %>
+<div class="panel-footer">
+<%= link_to 'Show', @instructor,:class => "btn-primary btn-sm" %>
+<%= link_to 'Back', instructors_path,:class => "btn-primary btn-sm" %>
+</div>

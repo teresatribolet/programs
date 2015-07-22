@@ -1,6 +1,7 @@
 <h1>Editing Enrollment</h1>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @enrollment %> |
-<%= link_to 'Back', enrollments_path %>
+<div class="panel-footer">
+<%= link_to 'Show', @enrollment,:class => "btn-primary btn-sm" %>
+<%= link_to 'Back', enrollments_path,:class => "btn-primary btn-sm" %>
+</div>

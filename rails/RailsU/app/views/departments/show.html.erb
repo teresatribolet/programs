@@ -1,25 +1,26 @@
 <p id="notice"><%= notice %></p>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Student Details</h3>
+</div>
+<div class="panel-body">
+	<div>
+		<dl class="dl-horizontal">
+			<dl class="dl-horizontal">
+			<dt>Name</dt>
+			<dd><%= @department.name %></dd>
+			<dt>Budget</dt>
+			<dd><%= @department.budget %></dd>
+			<dt>Start Date</dt>
+			<dd><%= @department.start_date %></dd>	
+			<dt>Instructor</dt>
+			<dd><%= @department.instructor.first_name %>
+  <%= @department.instructor.last_name %></dd>	
+		</dl>
+	</div>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @department.name %>
-</p>
-
-<p>
-  <strong>Budget:</strong>
-  <%= @department.budget %>
-</p>
-
-<p>
-  <strong>Start date:</strong>
-  <%= @department.start_date %>
-</p>
-
-<p>
-  <strong>Instructor:</strong>
-  <%= @department.instructor.first_name %>
-  <%= @department.instructor.last_name %>
-</p>
-
-<%= link_to 'Edit', edit_department_path(@department) %> |
-<%= link_to 'Back', departments_path %>
+<div class="panel-footer">
+<%= link_to 'Edit', edit_department_path(@department),:class => "btn-primary btn-sm" %>
+<%= link_to 'Back', departments_path,:class => "btn-primary btn-sm" %>
+</div>

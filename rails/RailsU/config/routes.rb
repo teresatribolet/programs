@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'courses#index'
+  root 'pages#home'
 
   get 'pages/home'
 

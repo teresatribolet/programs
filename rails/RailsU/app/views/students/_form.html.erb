@@ -1,3 +1,9 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Student Information</h3>
+</div>
+<div class="panel-body">
+  <div>
 <%= form_for(@student) do |f| %>
   <% if @student.errors.any? %>
     <div id="error_explanation">
@@ -23,7 +29,10 @@
     <%= f.label :enrollment_date %><br>
     <%= f.date_select :enrollment_date %>
   </div>
+  <br>
   <div class="actions">
     <%= f.submit %>
   </div>
-<% end %>
+  <% end %>  
+  </div>
+</div>
