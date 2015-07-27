@@ -1,0 +1,40 @@
+<table>
+	<tbody>
+		<tr>
+			<th>name</th>
+			<th>model</th>
+			<th>starship class</th>
+			<th>manufacturer</th>
+			<th>cost in credits</th>
+			<th>length</th>
+			<th>crew</th>
+			<th>passengers</th>
+			<th>max atmosphering speed</th>
+			<th>hyperdrive rating</th>
+			<th>mglt</th>
+			<th>cargo capacity</th>
+			<th>consumables</th>
+			<th>films</th>
+			<th>pilots</th>
+		</tr>
+		<% @results.each do |starship| %>
+		<tr>
+			<td><%= starship["name"] %></td>
+			<td><%= starship["model"] %></td>
+			<td><%= starship["starship_class"] %></td>
+			<td><%= starship["manufacturer"] %></td>
+			<td><%= starship["cost_in_credits"] %></td>
+			<td><%= starship["length"] %></td>
+			<td><%= starship["crew"] %></td>
+			<td><%= starship["passengers"] %></td>
+			<td><%= starship["max_atmosphering_speed"] %></td>
+			<td><%= starship["hyperdrive_rating"] %></td>
+			<td><%= starship["MGLT"] %></td>
+			<td><%= starship["cargo_capacity"] %></td>
+			<td><%= starship["consumables"] %></td>
+			<td><%= starship["films"] %></td>
+			<td><%= starship["pilots"] %></td>
+		</tr>
+	<% end %>
+	</tbody>
+</table>
