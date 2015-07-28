@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pin.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag(@pin.image_url, :width => 200) if @pin.image.present? %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @pin.about %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @pin.user.full_name %>
+</p>
+
+<p>
+  <strong>Board:</strong>
+  <%= @pin.board.name %>
+</p>
+
+<%= link_to 'Edit', edit_pin_path(@pin),:class => "btn-success btn-sm" %>
+<%= link_to 'Back', pins_path,:class => "btn-success btn-sm" %>
