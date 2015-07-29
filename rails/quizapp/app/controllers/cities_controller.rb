@@ -4,11 +4,11 @@ class CitiesController < ApplicationController
 
 def youwon
   @cities = City.all
-
 end
 
   # GET /cities
   # GET /cities.json
+
   def index
     @cities = City.all
   end

@@ -19,16 +19,39 @@
 }
 
 h1, h2, h3 {
-	font-family: "Cabin Sketch", sans-serif;
+	font-family: "KG Blank Space Sketch", sans-serif;
 	color: #000;
 }
-.blogcolor {
+body {
 	background-color: #308391;
-	opacity: 1.9;
+}
+
+.container {
+	background-color: rgba(255, 255, 255, .2);
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-bottom: 10px;
+	border-radius: 5px;
 }
 
 a.btn.btn-danger, 
 a.btn.btn-warning, 
-a.btn.btn-primary {
+a.btn.btn-primary,
+a.btn.btn-success {
+	color: white;
+	margin: 5px;
+}
+
+.btn-teal {
+	background-color: rgb(0, 128, 128);
+	color: white;
+}
+
+.btn-teal:hover {
+	background-color: rgb(0, 110, 110);
+	color: white;
+}
+
+.btn-teal:visited {
 	color: white;
 }

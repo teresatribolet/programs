@@ -14,11 +14,12 @@
   <%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/boostrap/3.3.2/js/bootstrap.min.js" %>
 
   <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+  <%= yield %>
+</div>
 
 </body>
 </html>
