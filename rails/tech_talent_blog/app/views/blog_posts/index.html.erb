@@ -1,4 +1,5 @@
-<body class="blogcolor">
+<body>
+<div class="container">
 <h1>Current Blog Posts</h1>
 
 <div class="row">
@@ -9,19 +10,20 @@
           <%= link_to blog_post.title, blog_post %>
         </div>
         <div class="panel-body">
-          by <%= blog_post.author %> on <%= blog_post.created_at.strftime('%m/%d/%Y %I:%M %p') %><br />
+          by <%= link_to blog_post.user.name, user_posts_path(id: blog_post.user.id) %> on <%= blog_post.created_at.strftime('%m/%d/%Y %I:%M %p') %><br />
           <p><%= blog_post.blog_entry[0..5] %>...[<%= link_to 'Read More', blog_post %>]</p>
         </div>
         <div class="panel-footer">
-          <%= link_to 'Edit', edit_blog_post_path(blog_post), class: "btn btn-teal" %>
-          <%= link_to 'Destroy', blog_post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+        <% if signed_in? %>
+        <% if current_user.id == blog_post.user.id %>
+          <%= link_to 'Edit', edit_blog_post_path(blog_post), class: "btn btn-edit" %>
+          <%= link_to 'Destroy', blog_post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-delete" %>
+          <% end %>
+          <% end %>
         </div>
       </div>
     </div>
 <% end %>
 </div>
-
-<br>
-
-<%= link_to 'New Blog post', new_blog_post_path,:class => "btn btn-success" %>
+</div>
 </body>

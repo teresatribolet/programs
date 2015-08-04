@@ -20,10 +20,10 @@
 
 h1, h2, h3 {
 	font-family: "KG Blank Space Sketch", sans-serif;
-	color: #000;
+	color: #D788AF;
 }
 body {
-	background-color: #308391;
+	background-color: #18032B;
 }
 
 .container {
@@ -34,24 +34,51 @@ body {
 	border-radius: 5px;
 }
 
-a.btn.btn-danger, 
-a.btn.btn-warning, 
-a.btn.btn-primary,
-a.btn.btn-success {
-	color: white;
-	margin: 5px;
+button {
+	background-color: #F0DB38;
+	color: #black;
+	border-radius: 5px;
+	padding: 10px;
+	border: none;
+	font-size: 14px;
 }
 
-.btn-teal {
-	background-color: rgb(0, 128, 128);
+
+
+.btn-edit {
+	background-color: #F0DB38;
+	color: black;
+}
+
+.btn-edit:hover {
+	background-color: #F0DB38;
 	color: white;
 }
 
-.btn-teal:hover {
-	background-color: rgb(0, 110, 110);
+.btn-edit:visited {
+	color: #444;
+}
+
+.btn-delete {
+	background-color: #25CDEF;
+	color: black;
+}
+
+.btn-delete:hover {
+	background-color: #25CDEF;
 	color: white;
 }
 
-.btn-teal:visited {
-	color: white;
+.btn-delete:visited {
+	color: #444;
+}
+
+.form-control {
+	width: 225px;
+}
+
+.navbar-default {
+	background-color: #D27994;
+	margin: -10px;
+	padding: 5px;
 }

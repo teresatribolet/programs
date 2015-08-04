@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ID=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TechTalentBlog</title>
-  
 
   <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -16,8 +15,56 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/blog_posts">Tech Talent South Blog</a>
+    </div>
 
-<div class="container">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/blog_posts/new">Create New Blog</a></li>
+
+
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+
+         <% if user_signed_in? %>
+
+          <li><%= link_to "Your Posts", your_posts_path %></li>
+            <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+
+          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+            </div>
+            <% elsif %>
+              <div id="nav-button">
+                <%= link_to "Sign In", new_user_session_path, class: "btn btn-edit" %>
+                <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-delete" %>
+
+              </div>
+          <% end %>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
   <%= yield %>
 </div>
 
